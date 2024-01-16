@@ -1,5 +1,51 @@
 :root {
-    --color1: #eee;
+    --color1: white;
+    --nav-text-color: black;
+
 
 }
 
+* {
+    margin: 0;
+}
+
+#header-img {
+    width: 60px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--color1);
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    padding: 0 10px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center ;
+}
+
+.product-name { 
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+}
